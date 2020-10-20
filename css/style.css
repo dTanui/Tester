@@ -1,0 +1,260 @@
+body{
+    background-image: url("../images/carpool.jpg");
+    font-family: 'Play', sans-serif;
+    height: 90vh;
+    background-size: 70%;
+    color: #fff;
+    background-position: center;
+}
+
+    .signin{
+        background: rgba(44, 62, 80, 0.7);
+        width: 250px;
+        padding: 40px;
+        margin: auto;
+        margin-top: 100px;
+        height: 400px;
+        margin-left: 180x;
+        text-align: center;
+    }
+    #PassList{
+        list-style-type: none;
+        font-size: 20px;
+        text-align: center;
+    }
+    #head{
+        font-size: 40px;
+        float: left;
+        margin-top: -40px;
+    }
+    .signup{
+        background: rgba(44, 62, 80, 0.7);
+        width: 350px;
+        padding: 40px;
+        height: 480px;
+        margin: auto;
+        margin-top: 60px;
+        justify-content: space-evenly;
+        margin-left: 180x;
+        text-align: center;
+        overflow: hidden;
+        font-size: 30px;
+    }
+    p{
+        text-align: left;
+        font-size: 20px;
+    }
+   
+    #driver{
+        
+        background: rgba(44, 62, 80, 0.7);
+        width: 240px;
+        padding: 40px;
+        margin: auto;
+        margin-top: 120px;
+        height: 370px;
+        margin-left: 180x;
+        text-align: center;
+        overflow: hidden;
+        
+    }  
+    
+    .navgate{
+        margin:30px 0 20px 20px;
+    }
+    .start{
+        background: rgba(44, 62, 80, 0.7);
+        width: 270px;
+        padding: 40px;
+        margin: auto;
+        margin-top: 90px;
+        height: 400px;
+        margin-left: 180x;
+        text-align: center;
+    }
+    #carpool{
+    
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        float:left;
+    }
+
+    .profile{
+        
+        background: rgba(44, 62, 80, 0.7);
+        width: 240px;
+        padding: 40px;
+        margin: auto;
+        margin-top: 90px;
+        height: 400px;
+        margin-left: 180x;
+        text-align: center;
+    }
+#profilepic{
+    vertical-align: middle;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        float:center;
+}
+input {
+    font-family: 'Play', sans-serif;
+    background: transparent;
+    width: 320px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin: 0 0 15px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    font-size: 16px;
+    font-weight: 200px;
+    outline: none;
+    color: #fff;
+
+}
+.signup button, .signin button, .start button, .drive button, .profile button{
+     
+    text-transform: uppercase;
+    background: #4CAF50;
+    width: 350px;
+    border: none;
+    padding: 10px 0;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor:pointer;
+    line-height: 30px;
+    border-radius: 15px;position: right;
+    font-family: 'Play', sans-serif;
+    
+}
+.confirm-message{
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: none;
+  appearance: none;
+}
+input::-webkit-datetime-edit {
+    color: transparent; 
+}
+
+input[type="submit"]:hover{
+color: #fff;
+background-color: #000;
+
+}
+
+#menu{
+    width:35px ;
+    height:30px ;
+    margin:30px 0 20px 20px ;
+    cursor: pointer;
+}
+.bar{
+    height:5px ;
+    width:100% ;
+    background-color:#b81568 ;
+    display: block;
+    border-radius:5px ;
+    transition: 0.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.change .bar{
+    background-color: white;
+}
+.change #bar1{
+    transform: translateY(-4px) rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-13px) rotate(45deg);
+}
+.change #bar2{
+    opacity:0;
+}
+.nav li a:hover{
+    font-weight: bold;
+}
+.nav li a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav li{
+    list-style: none;
+    padding:16px;
+}
+.nav{
+    padding: 0;
+    margin:0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.menu-big, #menu-bar{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.menu-big{
+    z-index: 1;
+    width:0 ;
+    height:0;
+    background:radial-gradient(circle, #e94498, #b81568);
+    transition:0.3s ease;
+    border-radius: 50%;
+}
+#menu-bar{
+    z-index: 2;
+}
+.change-big{
+    width:550px;
+      height: 540px;
+      transform: translate(-60%,-30%);
+}
+.change{
+    display: block;
+}
+h1{
+    color: rgb(173, 241, 13);
+    float: right;
+    font-size: 40px;
+    margin:30px 0 20px 20px;
+
+}
+a {
+    color: yellow;
+    text-decoration: blink;
+}
+a:hover{
+    color: skyblue;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#alert{
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+::placeholder{
+    color:aliceblue;
+    opacity: 0.8;
+}
+#drive{
+    text-align:right;
+}

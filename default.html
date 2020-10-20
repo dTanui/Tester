@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    </head>
+
+<body>
+    <nav class="navgate">
+        <img id="carpool"  src= "images/carpool.jpg"  alt="RUSH"  />
+          <h1>RUSH</h1>
+               <span class="rightside">Don't have an account?<a href="signup.html">&nbsp;Sign up</a></span>
+       </nav>
+        
+<div class="signin" id="signIn">
+<form id="signinForm" autocomplete="on">
+    <h2 style="color: white">Log In</h2>
+    <input type="email" id="email" name="email" placeholder=" Email" required autofocus>
+    <input type="password" id="password" name="password" placeholder=" Password" required><br>
+    <button type="submit">Login</button><br><br>
+
+
+        <a href="forget.html" style="margin-left: 0px;
+        font-size: 15px;
+        font-family:  Tahoma, Geneva, sans-serif;">Forgot Password</a><br><br>
+</form>
+
+
+</div>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+<script>
+//initialize firebase
+var firebaseConfig = {
+apiKey: "AIzaSyDXQhv-RxIScJ-UcC-T5r7DXxrMHWlkDCo",
+authDomain: "tester-9ed04.firebaseapp.com",
+databaseURL: "https://tester-9ed04.firebaseio.com",
+projectId: "tester-9ed04",
+storageBucket: "tester-9ed04.appspot.com",
+messagingSenderId: "319663180288",
+appId: "1:319663180288:web:68fd87df91450c593d66e5",
+measurementId: "G-HT75YS53KX"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//make auth and firebase references
+const auth = firebase.auth();
+const db = firebase.firestore();
+</script>
+
+<script src="default.js"></script>
+</body>
+    
+    </html>

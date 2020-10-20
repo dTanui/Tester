@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+    <title>start</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <h2>Please set up your profile</h2>
+    </head>
+    <body>
+    <div class="profile">
+        <form id="profiles">
+            <img id="profilepic"  src= "images/carpool4.jpg"  alt="RUSH"  /><br><br>
+            <input type="text" name="firstname" placeholder=" First Name as in ID" required maxlength="15" autofocus>
+            <input type="text" name="lastname" placeholder=" Last Name as in ID" required maxlength="15">
+            <input type="number" name="id_number" placeholder=" ID number" required maxlength="15">
+            <input type="number"  name="phone_number" placeholder="Phone Number" required maxlength="15">
+
+            <button type="submit">SUBMIT</button><br><br>
+           </div>
+        </form>
+
+           
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDXQhv-RxIScJ-UcC-T5r7DXxrMHWlkDCo",
+            authDomain: "tester-9ed04.firebaseapp.com",
+            databaseURL: "https://tester-9ed04.firebaseio.com",
+            projectId: "tester-9ed04",
+            storageBucket: "tester-9ed04.appspot.com",
+            messagingSenderId: "319663180288",
+            appId: "1:319663180288:web:68fd87df91450c593d66e5",
+            measurementId: "G-HT75YS53KX"
+          };
+         // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    //make auth and firebase references
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    </script>
+    
+    <script src="profile.js"></script>
+    </body>
+    

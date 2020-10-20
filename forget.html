@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <style>
+   
+    
+    
+    
+    </style>
+    </head>
+    <body>
+<div class="forget">
+    <form>
+<h2 text-align="center" style="color: #fff;">Forget Password</h2>
+<h5 style="font-size: 14px; color:yellow">Enter email used with your account.A link will be sent to your email to reset your password.</h5>
+<input type="email" id="email" name="email" placeholder=" Enter your email" required>
+<input type="button" value="Send"  onclick="myFunction()"/>
+<a href="signin.html">Back</a>
+<div id="snackbar">Link sent to email successfully</div>
+<script>
+function myFunction(){
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){x.className = x.className.replace("show","");},3000);
+}
+</script>
+    </form>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+    <title>login</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    </head>
+
+<body>
+    <div class="navgate">
+        <img id="carpool"  src= "images/carpool.jpg"  alt="RUSH"  />
+          <h1>RUSH</h1>
+       </div>
+       <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    <ul class="nav" id="nav">
+        <li><a href=#>Profile</a></li>
+        <li><a href="driver.html">Be a driver</a></li>
+        <li><a href="index.html">Be a passenger</a></li>
+        <li><a href=#>About us</a></li>
+        <li><button id="logout"onclick="logout()">Logout</button></li>
+    </ul>
+    </div>
+    <div class="menu-big" id="menu-big"></div>
+    
+    
+<div class="drive" id="Drive">
+<form id="driver" autocomplete="on">
+    <input type="text" name="from" placeholder=" From" required autofocus>
+    <input type="text" name="to" placeholder=" To" required><br>
+    <input type="date" name="date" placeholder="Date of Travel" max="2021-01-01" min="2018-01-01" required>
+    <input type="time" name="time" placeholder="Time" maxlength="6" required>
+    <input type="text" name="license" placeholder="Car License Plate" minlength="0" maxlength="7" required>
+    <input type="number" name="Phone_Number" placeholder="Phone Number" maxlength="15" required >
+    <button type="submit">Submit</button><br><br>
+    </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyDXQhv-RxIScJ-UcC-T5r7DXxrMHWlkDCo",
+        authDomain: "tester-9ed04.firebaseapp.com",
+        databaseURL: "https://tester-9ed04.firebaseio.com",
+        projectId: "tester-9ed04",
+        storageBucket: "tester-9ed04.appspot.com",
+        messagingSenderId: "319663180288",
+        appId: "1:319663180288:web:68fd87df91450c593d66e5",
+        measurementId: "G-HT75YS53KX"
+      };
+       // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+    </script>
+<script src="driver.js"></script>
+
+
+    </body>
